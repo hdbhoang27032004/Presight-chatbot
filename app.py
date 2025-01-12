@@ -128,6 +128,6 @@ if prompt:
     st.session_state.messages.append({'role': 'user', 'content': prompt})
     
     # Tạo câu trả lời
-    answer = generate_answer(prompt, top_k=5)
+    answer = generate_answer(prompt, top_k=10)
     st.chat_message('assistant').markdown(answer)
     st.session_state.messages.append({'role': 'assistant', 'content': answer})
